@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WordShowViewController: UIViewController {
+    
+    // Create List
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,27 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    // MARK: Setup UI
+    private func generateUI() {
+        
+        // Label
+        let label = UILabel()
+        label.font = 36
+        label.text = "Click \"Next Word\" to start!"
+        
+        // Next Button
+        
+        
+        // Stack View
+        let stackView = UIStackView()
+        stackView.addArrangedSubview(view: self)
+        
+        
+    }
+    
+    
 
 
 }
